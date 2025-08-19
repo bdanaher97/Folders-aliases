@@ -4,7 +4,7 @@
 :root {
   /* ---------- Gallery display knobs (EDIT THESE) ---------- */
   /* Aspect ratios for folder tiles (examples: 1 / 1, 4 / 5, 3 / 2, 16 / 9) */
-  --tile-aspect-top: 1 / 1;  /* Top-level gallery folders */
+  --tile-aspect-top: 1 / 1 ;  /* Top-level gallery folders */
   --tile-aspect-sub: 1 / 1;  /* Subdirectory folders */
 
   /* Show/hide text labels without code changes (1 = show, 0 = hide) */
@@ -12,7 +12,7 @@
   --show-top-counts: 1;
   --show-sub-titles: 0;
   --show-sub-counts: 1;
-  --show-image-filenames: 1;
+  --show-image-filenames: 0;
 
   /* ---------- Lightbox + site misc ---------- */
   /* Lightbox overlay & buttons */
@@ -27,7 +27,7 @@
   --lightbox-border-mobile: 2px; /* you said you liked 2px on mobile */
 
   /* Site-wide */
-  --site-name: "Simon Danaher"; /* ← change this */
+  --site-name: "Fuzey"; /* ← change this */
   --header-offset: 64px;        /* ← distance from top where crumbs pin under the header */
   --header-bg: #fafafa;         /* matches bg-paper */
   --crumbs-bg: var(--header-bg);

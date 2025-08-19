@@ -18,18 +18,46 @@
       "name": "AAALiases",
       "slug": "AAALiases",
       "fsPath": "E:\\_Bill\\Folders-aliases\\Folders-aliases\\public\\Portfolio\\AAALiases",
-      "webPath": "/Portfolio/AAALiases"
+      "webPath": "/Portfolio/AAALiases",
+      "coverWebPath": "/Portfolio/ADP/ADP-Purfume-05-WINE-SD.jpg"
     },
     {
       "name": "ADP",
       "slug": "ADP",
       "fsPath": "E:\\_Bill\\Folders-aliases\\Folders-aliases\\public\\Portfolio\\ADP",
       "webPath": "/Portfolio/ADP",
-      "coverWebPath": "/Portfolio/ADP/ADP-Purfume-05-WINE-SD.jpg",
+      "coverWebPath": "/Portfolio/ADP/ADP-Purfume-05-MAIN-sd.jpg",
       "images": [
         "ADP-Purfume-05-MAIN-sd.jpg",
         "ADP-Purfume-05-SD.jpg",
         "ADP-Purfume-05-WINE-SD.jpg"
+      ]
+    },
+    {
+      "name": "PATTERN",
+      "slug": "PATTERN",
+      "fsPath": "E:\\_Bill\\Folders-aliases\\Folders-aliases\\public\\Portfolio\\PATTERN",
+      "webPath": "/Portfolio/PATTERN",
+      "coverWebPath": "/Portfolio/PATTERN/p2.png",
+      "images": [
+        "p2.png",
+        "P3.png",
+        "p4.png",
+        "Pattern.png",
+        "UD.png"
+      ]
+    },
+    {
+      "name": "QT's",
+      "slug": "QT's",
+      "fsPath": "E:\\_Bill\\Folders-aliases\\Folders-aliases\\public\\Portfolio\\QT's",
+      "webPath": "/Portfolio/QT's",
+      "coverWebPath": "/Portfolio/QT's/1.png",
+      "images": [
+        "1.png",
+        "2.png",
+        "3.png",
+        "photo-collage.png (20).png"
       ]
     }
   ]

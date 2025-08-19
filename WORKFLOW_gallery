@@ -1,0 +1,112 @@
+/_ prettier-ignore-file _/
+
+### HIT LIST
+
+git pull origin main # Sync with latest main before making changes
+npm run gen:manifest # Regenerate .folders and .images after adding/removing content
+npm run dev # Run local preview to check changes
+git add -A # Stage all changes
+git commit -m "Content update" # Commit with a clear message
+git push # Push to main (or your branch) to deploy via Vercel
+
+#### WORKFLOW: UPDATE SITE GALLERIES (CONTENT-ONLY)
+
+Goal: add/remove/rename gallery folders or images, set their order, and publish — without touching app code.
+
+---
+
+#### 0) PREP: SYNC & BRANCH (OPTIONAL)
+
+- git pull origin main
+- (optional) create a short-lived branch:
+  git checkout -b content-update-YYYYMMDD
+
+---
+
+#### 1) ADD / REMOVE CONTENT
+
+- Put new images into the correct gallery folder(s).
+- Create a new gallery by making a folder. If you want a specific position, use a numeric prefix:
+  0042_new-shoot
+  Higher numbers appear first. The prefix is stripped in the UI.
+
+Note: Your gallery roots are the folders you’ve been using for content (e.g., /public/stills/... and /public/motion/...). If yours differ, use those.
+
+---
+
+#### 2) CONTROL ORDER (OPTIONAL)
+
+- Gallery order:
+
+  - Easiest: adjust numeric prefixes (higher = earlier in list).
+  - Manual: create or edit a .order file in the galleries root and list folder names line by line. Anything not listed is appended (prefix-sorted, then alpha).
+
+- Image order inside a gallery:
+
+  - Create or edit that gallery’s .order file listing filenames in desired sequence.
+  - Any files not listed are appended (alpha). Duplicates in .order will show duplicates on the site.
+
+---
+
+#### 3) REGENERATE MANIFESTS
+
+- Run:
+  npm run gen\:manifest
+- This refreshes the helper files (.folders and .images) so .order editing is convenient and accurate.
+
+Reminder: Do this whenever you add/remove/rename galleries or images.
+
+---
+
+#### 4) QUICK LOCAL CHECK (OPTIONAL)
+
+- If you want to sanity check locally:
+  npm run dev
+  Visit the local URL, click into the updated galleries, confirm order and presence of new images.
+- Stop dev server when done.
+
+---
+
+#### 5) COMMIT & PUSH
+
+- git add -A
+- git commit -m "Content: update galleries and orders (YYYY-MM-DD)"
+- If you used a branch:
+  git push -u origin content-update-YYYYMMDD
+  Open a PR, merge to main.
+- If committing directly to main:
+  git push
+
+Vercel will auto-build/deploy. Watch the deployment until it’s green.
+
+---
+
+#### 6) POST-DEPLOY SPOT CHECK
+
+- Open the live site.
+- Verify:
+
+  - New galleries/images present
+  - Gallery order correct
+  - Image order correct
+  - Lightbox opens, arrows work
+
+---
+
+#### QUICK REFERENCE
+
+- Prefix rule: 0001_name → shown as “name”, higher numbers first.
+- .order beats prefixes for whatever it lists.
+- Unlisted items get appended (prefix-sorted, then alpha).
+- Always run: npm run gen\:manifest after content changes.
+- Typical commands:
+  git pull
+  npm run gen\:manifest
+  git add -A && git commit -m "Content update" && git push
+
+---
+
+#### TROUBLESHOOTING
+
+- Something missing? Run npm run gen\:manifest again, re-check filenames/extensions, and ensure items appear in the right .order file (root for galleries; inside the gallery for images).
+- Order not changing? Confirm you edited the correct .order file and there are no trailing spaces or extensions mismatches. Remember: .order must list exact folder or file names.

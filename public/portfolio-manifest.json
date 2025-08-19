@@ -1,0 +1,813 @@
+{
+  "name": "Portfolio",
+  "slug": "Portfolio",
+  "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio",
+  "webPath": "/Portfolio",
+  "children": [
+    {
+      "name": "Panerai RADIOMIR",
+      "slug": "Panerai RADIOMIR",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Panerai RADIOMIR",
+      "webPath": "/Portfolio/Panerai RADIOMIR",
+      "coverWebPath": "/Portfolio/Panerai RADIOMIR/Solo with rock-assets/Blue.png",
+      "children": [
+        {
+          "name": "New 3 up Brown with gaps",
+          "slug": "New 3 up Brown with gaps",
+          "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Panerai RADIOMIR/New 3 up Brown with gaps",
+          "webPath": "/Portfolio/Panerai RADIOMIR/New 3 up Brown with gaps",
+          "coverWebPath": "/Portfolio/Panerai RADIOMIR/New 3 up Brown with gaps/Layer 7.png",
+          "images": [
+            "Layer 7.png",
+            "Layer 8.png",
+            "Layer 9.png"
+          ]
+        },
+        {
+          "name": "Solo with rock-assets",
+          "slug": "Solo with rock-assets",
+          "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Panerai RADIOMIR/Solo with rock-assets",
+          "webPath": "/Portfolio/Panerai RADIOMIR/Solo with rock-assets",
+          "coverWebPath": "/Portfolio/Panerai RADIOMIR/Solo with rock-assets/Brown.png",
+          "images": [
+            "Brown.png",
+            "Blue.png",
+            "White.png"
+          ]
+        },
+        {
+          "name": "New GOLD 3 up",
+          "slug": "New GOLD 3 up",
+          "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Panerai RADIOMIR/New GOLD 3 up",
+          "webPath": "/Portfolio/Panerai RADIOMIR/New GOLD 3 up",
+          "coverWebPath": "/Portfolio/Panerai RADIOMIR/New GOLD 3 up/Layer 11.png",
+          "images": [
+            "Layer 11.png",
+            "Layer 12.png",
+            "Layer 13.png"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CKW",
+      "slug": "CKW",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/CKW",
+      "webPath": "/Portfolio/CKW",
+      "coverWebPath": "/Portfolio/CKW/HeatPump.jpg",
+      "images": [
+        "Burglar.jpg",
+        "CKW Solar Panel Env 06.jpg",
+        "CKW_Car_10.jpg",
+        "HeatPump.jpg"
+      ]
+    },
+    {
+      "name": "BlackHole",
+      "slug": "BlackHole",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/BlackHole",
+      "webPath": "/Portfolio/BlackHole",
+      "coverWebPath": "/Portfolio/BlackHole/BlackHole-L3-Edit-Twirl.jpg",
+      "images": [
+        "BlackHole-L1.jpg",
+        "BlackHole-L3-Edit-Twirl.jpg",
+        "BlackHole-L2-Edit.jpg"
+      ]
+    },
+    {
+      "name": "Imagined Watches JPEG",
+      "slug": "Imagined Watches JPEG",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Imagined Watches JPEG",
+      "webPath": "/Portfolio/Imagined Watches JPEG",
+      "coverWebPath": "/Portfolio/Imagined Watches JPEG/Finned_Watch_03_1080p_Side.jpg",
+      "images": [
+        "Finned_Watch_03_1080p_Side.jpg",
+        "Finned_Watch_03_1080p_Top_1.jpg",
+        "Finned_Watch_03_1080p_Top.jpg",
+        "Louvre_watch_0004_SQ_C2p.jpg",
+        "Louvre_watch_0004_SQ_C2p_1.jpg",
+        "Louvre_watch_0004_SQ_C3.jpg",
+        "Louvre_watch_0005_SQ_C3.jpg",
+        "Sub_Watch_01b_SQ4k_C1_0001.jpg",
+        "Meteor_03b_SQ_FNT.jpg"
+      ]
+    },
+    {
+      "name": "AAALiases",
+      "slug": "AAALiases",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/AAALiases",
+      "webPath": "/Portfolio/AAALiases",
+      "coverWebPath": "/Portfolio/Head/LED-Headlight_v01.Edge_.0001-copy.jpg"
+    },
+    {
+      "name": "ADP",
+      "slug": "ADP",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/ADP",
+      "webPath": "/Portfolio/ADP",
+      "coverWebPath": "/Portfolio/ADP/ADP-Purfume-05-WINE-SD.jpg",
+      "images": [
+        "ADP-Purfume-05-MAIN-sd.jpg",
+        "ADP-Purfume-05-SD.jpg",
+        "ADP-Purfume-05-WINE-SD.jpg"
+      ]
+    },
+    {
+      "name": "Bag",
+      "slug": "Bag",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Bag",
+      "webPath": "/Portfolio/Bag",
+      "coverWebPath": "/Portfolio/Bag/Bag-Procedural_0001.jpg",
+      "images": [
+        "Bag-Procedural_0001.jpg",
+        "Bag-Procedural_0001b.jpg",
+        "Bag-Procedural_0002.jpg",
+        "Bag-Procedural_0003.jpg",
+        "Channel-Bag-on-Block-01-2.jpg",
+        "Channel-Bag-on-Block-01.jpg",
+        "Channel-Bag-on-Block-01b-2.jpg",
+        "Channel-Bag-on-Block-01b.jpg",
+        "Channel-Bag-on-Block-fix-02.jpg",
+        "Channel-Bag-on-Block-fix-03-white-2.jpg",
+        "Channel-Bag-on-Block-fix-03-white.jpg",
+        "Channel-Bag-on-Block-fix-04red.jpg",
+        "Channel-Bag-on-Block-fix-05-2.jpg",
+        "Channel-Bag-on-Block-fix-05.jpg"
+      ]
+    },
+    {
+      "name": "Bat",
+      "slug": "Bat",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Bat",
+      "webPath": "/Portfolio/Bat",
+      "coverWebPath": "/Portfolio/Bat/Bat_0004.jpg",
+      "images": [
+        "Bat_0001.jpg",
+        "Bat_0003.jpg",
+        "Bat_0004.jpg",
+        "Bat_0005.jpg",
+        "Bat-copy.jpg"
+      ]
+    },
+    {
+      "name": "Black-Feathers",
+      "slug": "Black-Feathers",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Black-Feathers",
+      "webPath": "/Portfolio/Black-Feathers",
+      "coverWebPath": "/Portfolio/Black-Feathers/ret-HM-Black-Fathers-09-with-Gold-FLT1.jpg",
+      "images": [
+        "ret-HM-Black-Fathers-09-with-Gold-FLT1.jpg",
+        "ret-HM-Black-Fathers-16-copy.jpg",
+        "ret-HM-Black-Fathers-16-copy1.jpg"
+      ]
+    },
+    {
+      "name": "Bose",
+      "slug": "Bose",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Bose",
+      "webPath": "/Portfolio/Bose",
+      "coverWebPath": "/Portfolio/Bose/Bose-Wave-Black-Studio.jpg",
+      "images": [
+        "Bose-Wave-Black-Studio.jpg",
+        "ret-BOSE-Wave-vr034-FLT.jpg",
+        "ret-Bose-Wave-White-Studio-v2-08-FLT1.jpg"
+      ]
+    },
+    {
+      "name": "Breeze-",
+      "slug": "Breeze-",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Breeze-",
+      "webPath": "/Portfolio/Breeze-",
+      "coverWebPath": "/Portfolio/Breeze-/Breeze-Block_0002.jpg",
+      "images": [
+        "Breeze-Block_0002.jpg",
+        "Breeze-Block_0003.jpg"
+      ]
+    },
+    {
+      "name": "Cartier",
+      "slug": "Cartier",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Cartier",
+      "webPath": "/Portfolio/Cartier",
+      "coverWebPath": "/Portfolio/Cartier/Cartier_Salt_Lake_BG-Simp-F1_V10_CMJN_PLV-2.jpg",
+      "images": [
+        "Cartier_Salt_Lake_BG-Simp-F1_V10_CMJN_PLV-2.jpg",
+        "Cartier_Salt_Lake_BG-Simp-F1_V10_CMJN_PLV-3.jpg",
+        "Cartier_Salt_Lake_BG-Simp-F1_V10_CMJN_PLV.jpg",
+        "CartierIndiaLake_A_CLIENT_Vis1_FINAL_AvecBijoux_PLV.jpg",
+        "CartierIndiaLake_A_CLIENT_Vis2_FINAL_AvecBijoux_02_PLV-2.jpg",
+        "CartierIndiaLake_A_CLIENT_Vis2_FINAL_AvecBijoux_02_PLV-3.jpg",
+        "CartierIndiaLake_A_CLIENT_Vis2_FINAL_AvecBijoux_02_PLV-4.jpg",
+        "CartierIndiaLake_A_CLIENT_Vis2_FINAL_AvecBijoux_02_PLV.jpg"
+      ]
+    },
+    {
+      "name": "Cartier-Xray",
+      "slug": "Cartier-Xray",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Cartier-Xray",
+      "webPath": "/Portfolio/Cartier-Xray",
+      "coverWebPath": "/Portfolio/Cartier-Xray/Haute-Parfumerie-Kinkan-4-5-FLT.jpg",
+      "images": [
+        "Haute-Parfumerie-Kinkan-4-5-FLT.jpg",
+        "Haute-Parfumerie-Magnolia-4-5.jpg",
+        "Haute-Parfumerie-Muguet-FLT.jpg",
+        "Kinkan-Black-White.jpg",
+        "Kinkan-Black.jpg",
+        "Kinkan-v3-xray-01-FLT.jpg"
+      ]
+    },
+    {
+      "name": "Chair",
+      "slug": "Chair",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Chair",
+      "webPath": "/Portfolio/Chair",
+      "coverWebPath": "/Portfolio/Chair/CHAIR-Chairwall.jpg",
+      "images": [
+        "CHAIR-Chairwall.jpg",
+        "CHAIR-School-Chair-Helix-2.jpg",
+        "CHAIR-School-seat-ball-05.jpg",
+        "CHAIR-School-seat-Cube-04.jpg",
+        "Chair-Wall.jpg",
+        "NS_Chairwall-Unstable-Symmetry_0010-copy.jpg"
+      ]
+    },
+    {
+      "name": "Chanel-Sliced",
+      "slug": "Chanel-Sliced",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Chanel-Sliced",
+      "webPath": "/Portfolio/Chanel-Sliced",
+      "coverWebPath": "/Portfolio/Chanel-Sliced/Chanel-Sliced-Metal-Fluid_v02.RS_.0001.jpg",
+      "images": [
+        "Chanel-Sliced-Metal-Fluid_v02.RS_.0001.jpg",
+        "Chanel-Sliced-Metal-Fluid_v02.RS_.0002.jpg",
+        "Chanel-Sliced-Metal-Fluid_v02.RS_.0003.jpg",
+        "Chanel-Sliced-Metal-Fluid_v02.RS_.0004.jpg",
+        "Chanel-Sliced-Metal-Fluid_v02.RS_.0005.jpg"
+      ]
+    },
+    {
+      "name": "Chanel-no.5",
+      "slug": "Chanel-no.5",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Chanel-no.5",
+      "webPath": "/Portfolio/Chanel-no.5",
+      "coverWebPath": "/Portfolio/Chanel-no.5/Chanel-no.5_w11_v03.Close_A.STILL_.0074-copy.jpg",
+      "images": [
+        "Chanel-no.5_w11_v03.Close_A.STILL_.0074-copy.jpg",
+        "Chanel-no.5-Solo_v02.Redshift_ROP1.0001-copy.jpg"
+      ]
+    },
+    {
+      "name": "Chocobarre",
+      "slug": "Chocobarre",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Chocobarre",
+      "webPath": "/Portfolio/Chocobarre",
+      "coverWebPath": "/Portfolio/Chocobarre/CHOCOBARRE_4X3-PINK-FLT.jpg",
+      "images": [
+        "Pink-Scatter-Hex-3a.jpg",
+        "Pink-Scatter-Hex-3b.jpg",
+        "Pink-Scatter-Hex-3c.jpg",
+        "Blue-Pattern_0004-a-FLT.jpg",
+        "Blue-Pattern_0004-b-FLT-copy.jpg",
+        "Blue-Pattern_0004-c-FLT.jpg",
+        "CHOCOBARRE_30X40-Blue-FLT.jpg",
+        "CHOCOBARRE_30X40-Pink-FLT.jpg",
+        "CHOCOBARRE_4X3-BLEU-FLT.jpg",
+        "CHOCOBARRE_4X3-PINK-FLT.jpg"
+      ]
+    },
+    {
+      "name": "Cube-on-Black",
+      "slug": "Cube-on-Black",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Cube-on-Black",
+      "webPath": "/Portfolio/Cube-on-Black",
+      "coverWebPath": "/Portfolio/Cube-on-Black/Glow-Cube-2-01.jpg",
+      "images": [
+        "Glow-Cube-2-01.jpg",
+        "Glow-Cube-3-05.jpg",
+        "Glow-Cube-03.jpg",
+        "Glow-Cube-5-01a.jpg"
+      ]
+    },
+    {
+      "name": "Dessange",
+      "slug": "Dessange",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Dessange",
+      "webPath": "/Portfolio/Dessange",
+      "coverWebPath": "/Portfolio/Dessange/Dessange-Bottle-11-FLT-SD-FLT.jpg",
+      "images": [
+        "Dessange-Bottle-11-FLT-SD-FLT.jpg",
+        "Dessange-Bottle-11-FLT-SD-FLT-2.jpg"
+      ]
+    },
+    {
+      "name": "Energizer",
+      "slug": "Energizer",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Energizer",
+      "webPath": "/Portfolio/Energizer",
+      "coverWebPath": "/Portfolio/Energizer/ret-Energizer_Candle_V1_rgb.jpg",
+      "images": [
+        "ret-Energizer_Candle_V1_rgb.jpg",
+        "ret-Energizer_MAX_V1_print_rgb.jpg",
+        "ret-Energizer_Portable_V1_rgb-UNTAGGED.jpg",
+        "ret-Energizer_Portable_V1_rgb-UNTAGGED2.jpg",
+        "ret-Energizer_Portable_V1_rgb.jpg",
+        "ret-Energizer_USB_V1_naked_rgb.jpg",
+        "ret-Energizer_USB_V3_rgb.jpg"
+      ]
+    },
+    {
+      "name": "Executive-Toys",
+      "slug": "Executive-Toys",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Executive-Toys",
+      "webPath": "/Portfolio/Executive-Toys",
+      "coverWebPath": "/Portfolio/Executive-Toys/Execturive-toys-Newton.jpg",
+      "images": [
+        "Execturive-toys-Newton.jpg",
+        "executive-toys_Decision-07.jpg"
+      ]
+    },
+    {
+      "name": "Floating-Office",
+      "slug": "Floating-Office",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Floating-Office",
+      "webPath": "/Portfolio/Floating-Office",
+      "coverWebPath": "/Portfolio/Floating-Office/Floating-Bland-Office-09-FLT-3.jpg",
+      "images": [
+        "Floating-Bland-Office-09-FLT-3.jpg",
+        "Floating-Bland-Office-09-FLT.jpg"
+      ]
+    },
+    {
+      "name": "Fram-Filter",
+      "slug": "Fram-Filter",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Fram-Filter",
+      "webPath": "/Portfolio/Fram-Filter",
+      "coverWebPath": "/Portfolio/Fram-Filter/ret-Fram-Filter-016-Silver-cardboard-flt.jpg",
+      "images": [
+        "ret-Fram-Filter-016-Silver-cardboard-flt.jpg",
+        "ret-Fram-Filter-model-015-orange-cardboard-flt.jpg",
+        "ret-Fram-Filter-model-VRAY-Gold-015-flt.jpg",
+        "ret-Fram-High-Milage-TRT-beads-wider-018-flt.jpg"
+      ]
+    },
+    {
+      "name": "Frying",
+      "slug": "Frying",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Frying",
+      "webPath": "/Portfolio/Frying",
+      "coverWebPath": "/Portfolio/Frying/ret-Frying-Pan-011-egg.jpg",
+      "images": [
+        "ret-Frying-Pan-011-egg.jpg",
+        "ret-Frying-Pan-v20-006-bacon.jpg"
+      ]
+    },
+    {
+      "name": "Gauloise",
+      "slug": "Gauloise",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Gauloise",
+      "webPath": "/Portfolio/Gauloise",
+      "coverWebPath": "/Portfolio/Gauloise/Gauloises-Coq.jpg",
+      "images": [
+        "Gauloises-Coq.jpg",
+        "ret-GAU-Leaf_1000x300-FLT2.jpg",
+        "ret-GAU-Lone-Cigarette-HDRI-17-Wide-FLT.jpg",
+        "ret-GAU-Lone-Coq-HDRI-026-8-FINAL-Offset-Right.jpg",
+        "ret-GAU-Mask-Valid-Scene-016-Wide-A3H-FLT-2.jpg",
+        "ret-GAU-Mask-Valid-Scene-016-Wide-A3H-FLT.jpg",
+        "ret-GAU-Mobile-SPOT-Wide-FLT.jpg",
+        "ret-GAU-Tobacco-Frame-023-FLT.jpg"
+      ]
+    },
+    {
+      "name": "Glass bottle & Sushi",
+      "slug": "Glass bottle & Sushi",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Glass bottle & Sushi",
+      "webPath": "/Portfolio/Glass bottle & Sushi",
+      "coverWebPath": "/Portfolio/Glass bottle & Sushi/Sushi 04 FLT-2.jpg",
+      "images": [
+        "Sushi 04 FLT-2.jpg",
+        "Sushi 04 FLT.jpg",
+        "Beer Bottle 03 10k FLT-2.jpg",
+        "Beer Bottle 03 10k FLT.jpg",
+        "Sushi wireframe.jpg",
+        "Bottle wireframe.jpg"
+      ]
+    },
+    {
+      "name": "Glenmorangie",
+      "slug": "Glenmorangie",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Glenmorangie",
+      "webPath": "/Portfolio/Glenmorangie",
+      "coverWebPath": "/Portfolio/Glenmorangie/19 Years Old Visuals Landscape AW.jpg",
+      "images": [
+        "19 Years Old Visuals Landscape AW.jpg",
+        "19 Years Old Visuals Portrait AW.jpg",
+        "19-year-old-crops-2.jpg",
+        "19-year-old-crops.jpg",
+        "19-Years-Old-Visuals-Landscape-AW.jpg",
+        "19-Years-Old-Visuals-Portrait-AW.jpg",
+        "19YR_HEROLAYERS_psd Feb23rd R6Cropped Recolour-2.jpg",
+        "19YR_HEROLAYERS_psd Feb23rd R6Cropped Recolour-3.jpg",
+        "19YR_HEROLAYERS_psd Feb23rd R6Cropped Recolour.jpg"
+      ]
+    },
+    {
+      "name": "Gold-Cycloid",
+      "slug": "Gold-Cycloid",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Gold-Cycloid",
+      "webPath": "/Portfolio/Gold-Cycloid",
+      "coverWebPath": "/Portfolio/Gold-Cycloid/Cycloid_0013.jpg",
+      "images": [
+        "Cycloid_0013.jpg",
+        "Cycloid_0014-a.jpg",
+        "Cycloid_0014-b.jpg",
+        "Cycloid_0015.jpg"
+      ]
+    },
+    {
+      "name": "Gold-Skull",
+      "slug": "Gold-Skull",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Gold-Skull",
+      "webPath": "/Portfolio/Gold-Skull",
+      "coverWebPath": "/Portfolio/Gold-Skull/Gold-Skull_0001-AO-Edit.jpg",
+      "images": [
+        "Gold-Skull_0001-AO-Edit.jpg",
+        "Gold-Skull_0001-FLT.jpg",
+        "Gold-Skull_0001b-Edit.jpg"
+      ]
+    },
+    {
+      "name": "Guinness",
+      "slug": "Guinness",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Guinness",
+      "webPath": "/Portfolio/Guinness",
+      "coverWebPath": "/Portfolio/Guinness/Guinness-015-copy-copy.jpg",
+      "images": [
+        "Guinness-015-copy-copy.jpg",
+        "Guinness-Crop-flt-2.jpg",
+        "ret-Guinness-015-copy-copy.jpg",
+        "ret-Guinness-Crop-flt-2.jpg",
+        "ret-Guinness-Crop-flt-21.jpg"
+      ]
+    },
+    {
+      "name": "HNY 2023",
+      "slug": "HNY 2023",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/HNY 2023",
+      "webPath": "/Portfolio/HNY 2023",
+      "coverWebPath": "/Portfolio/HNY 2023/MerryChristmass2022_wide.jpg",
+      "images": [
+        "MerryChristmass2022_wide.jpg",
+        "HNY 2023 02.Redshift_ROP1.jpg",
+        "MerryChristmass2022_L.jpg",
+        "MerryChristmass2022_M.jpg",
+        "MerryChristmass2022_R.jpg"
+      ]
+    },
+    {
+      "name": "Harris",
+      "slug": "Harris",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Harris",
+      "webPath": "/Portfolio/Harris",
+      "coverWebPath": "/Portfolio/Harris/Harris-Tweed-Shoe.jpg",
+      "images": [
+        "Harris-Tweed-Shoe.jpg",
+        "Harris-Tweed-Shoe1.jpg"
+      ]
+    },
+    {
+      "name": "Head",
+      "slug": "Head",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Head",
+      "webPath": "/Portfolio/Head",
+      "coverWebPath": "/Portfolio/Head/LED-Headlight_v01.Edge_.0001-copy.jpg",
+      "images": [
+        "LED-Headlight_v01.Edge_.0001-copy.jpg",
+        "LED-Headlight_v01.Front_.0001-copy.jpg",
+        "LED-Headlight_v01.Sideish.0001-copy.jpg"
+      ]
+    },
+    {
+      "name": "Lightbulb",
+      "slug": "Lightbulb",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Lightbulb",
+      "webPath": "/Portfolio/Lightbulb",
+      "coverWebPath": "/Portfolio/Lightbulb/3W_Exploding-Lightbulb-tall-flt.jpg",
+      "images": [
+        "3W_Exploding-Lightbulb-tall-flt.jpg",
+        "ret-3W_Exploding-Lightbulb-Explo-flt.jpg",
+        "ret-3W_Exploding-Lightbulb-tall-flt.jpg"
+      ]
+    },
+    {
+      "name": "Nicholas",
+      "slug": "Nicholas",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Nicholas",
+      "webPath": "/Portfolio/Nicholas",
+      "coverWebPath": "/Portfolio/Nicholas/ret-NIK-Cocktail-glass_0015-7k-FLT2.jpg",
+      "images": [
+        "ret-NIK-Cocktail-glass_0015-7k-FLT2.jpg",
+        "ret-NIK-Dynamic-Grapes_0029-BG.jpg",
+        "ret-NIK-muselet-23-7k-FLT-Lab.jpg",
+        "ret-NIK-WineBottle_More-Stars_Clear-03-FLT-FIN.jpg"
+      ]
+    },
+    {
+      "name": "Numbers",
+      "slug": "Numbers",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Numbers",
+      "webPath": "/Portfolio/Numbers",
+      "coverWebPath": "/Portfolio/Numbers/PipeLetters_0004b-FLT.jpg",
+      "images": [
+        "PipeLetters_0004b-FLT.jpg",
+        "PipeLetters_0007-FLT.jpg",
+        "PipeLetters_0008-FLT.jpg"
+      ]
+    },
+    {
+      "name": "Panerai",
+      "slug": "Panerai",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Panerai",
+      "webPath": "/Portfolio/Panerai",
+      "coverWebPath": "/Portfolio/Panerai/Panerai_Rad_Blue_0007_5_SD_array_ROCK.jpg",
+      "images": [
+        "Panerai_Rad_Blue_0007_5_SD_array_ROCK.jpg",
+        "Panerai_Rad_BROWN_0007_5_SD_array_ROCK.jpg",
+        "Panerai_Rad_White_0005_5_AOV_MOre_BUMP_Beauty-SD.jpg",
+        "Panerai_Rad_WHITE_0007_5_SD_array_GOLD.jpg",
+        "Panerai_Rad_WHITE_0007_5_SD_array_ROCK.jpg"
+      ]
+    },
+    {
+      "name": "Panerai_Brabus",
+      "slug": "Panerai_Brabus",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Panerai_Brabus",
+      "webPath": "/Portfolio/Panerai_Brabus",
+      "coverWebPath": "/Portfolio/Panerai_Brabus/c89n5_010_asm_0009_AOV_Beauty-copy-2.jpg",
+      "images": [
+        "c89n5_010_asm_0009_AOV_Beauty-copy-2.jpg",
+        "c89n5_010_asm_0009_AOV_Beauty-copy.jpg",
+        "c89n5_010_asm_0009_AOV_Beauty-SD-FLT.jpg",
+        "c89n5_010_asm_0011_AOV_Beauty.jpg",
+        "c89n5_010_asm_0012_AOV_Beauty.jpg",
+        "Panerai_Brabus_on_ROCK_01_AOV_ANNUALE_Beauty.jpg"
+      ]
+    },
+    {
+      "name": "Panerai_x10",
+      "slug": "Panerai_x10",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Panerai_x10",
+      "webPath": "/Portfolio/Panerai_x10",
+      "coverWebPath": "/Portfolio/Panerai_x10/Panerai_x10_10Front245mm_HR_0000_REDUX2-50.jpg",
+      "images": [
+        "Panerai_x10_10Front245mm_HR_0000_REDUX2-50.jpg",
+        "Panerai_x10_10Front245mm_Simple-2.jpg",
+        "Panerai_x10_10Front245mm_Simple-3.jpg",
+        "Panerai_x10_10Front245mm_Simple.jpg"
+      ]
+    },
+    {
+      "name": "Pepsi",
+      "slug": "Pepsi",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Pepsi",
+      "webPath": "/Portfolio/Pepsi",
+      "coverWebPath": "/Portfolio/Pepsi/Pepsi-Can-Microphone1.jpg",
+      "images": [
+        "Pepsi-Can-Microphone1.jpg",
+        "Pepsi-Can-with-condensation.jpg",
+        "ret-Pepsi-Site-1.jpg",
+        "ret-Pepsi-Site-2.jpg",
+        "ret-Pepsi-Songbooth-truck.jpg",
+        "ret-Pepsi-Truck2.jpg",
+        "ret-Pepsi-Wet-wide-FLT.jpg"
+      ]
+    },
+    {
+      "name": "Phage",
+      "slug": "Phage",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Phage",
+      "webPath": "/Portfolio/Phage",
+      "coverWebPath": "/Portfolio/Phage/Phage-08-2.jpg",
+      "images": [
+        "Phage-08-2.jpg",
+        "Phage-08.jpg",
+        "Phage2-12-2.jpg",
+        "Phage2-12.jpg"
+      ]
+    },
+    {
+      "name": "PingPong",
+      "slug": "PingPong",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/PingPong",
+      "webPath": "/Portfolio/PingPong",
+      "coverWebPath": "/Portfolio/PingPong/PingPong_0001c2.jpg",
+      "images": [
+        "PingPong_0001c2.jpg",
+        "PingPong_abys.jpg",
+        "ret-PingPong-6k.jpg"
+      ]
+    },
+    {
+      "name": "Planets-White",
+      "slug": "Planets-White",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Planets-White",
+      "webPath": "/Portfolio/Planets-White",
+      "coverWebPath": "/Portfolio/Planets-White/PLA-Earth-004-A2.jpg",
+      "images": [
+        "PLA-Earth-004-A2.jpg",
+        "PLA-Saturn-005-A2-Print.jpg",
+        "ret-PLA-Saturn-005-A2-Print.jpg"
+      ]
+    },
+    {
+      "name": "Plexi",
+      "slug": "Plexi",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Plexi",
+      "webPath": "/Portfolio/Plexi",
+      "coverWebPath": "/Portfolio/Plexi/Plexi-02g-copy.jpg",
+      "images": [
+        "Plexi-02g-copy.jpg",
+        "Plexi-03-copy.jpg"
+      ]
+    },
+    {
+      "name": "Pod",
+      "slug": "Pod",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Pod",
+      "webPath": "/Portfolio/Pod",
+      "coverWebPath": "/Portfolio/Pod/Pod-08g.jpg",
+      "images": [
+        "Pod-08g.jpg",
+        "Pod-08p.jpg"
+      ]
+    },
+    {
+      "name": "Post-Logistics",
+      "slug": "Post-Logistics",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Post-Logistics",
+      "webPath": "/Portfolio/Post-Logistics",
+      "coverWebPath": "/Portfolio/Post-Logistics/Post-Logistics-A-12-no-xrefs-03.1.jpg",
+      "images": [
+        "Post-Logistics-A-12-no-xrefs-03.1.jpg",
+        "Post-Logistics-B-14.jpg"
+      ]
+    },
+    {
+      "name": "Powder-Impression",
+      "slug": "Powder-Impression",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Powder-Impression",
+      "webPath": "/Portfolio/Powder-Impression",
+      "coverWebPath": "/Portfolio/Powder-Impression/Powder-Impression-02.jpg",
+      "images": [
+        "Powder-Impression-02.jpg",
+        "Powder-Impression-03.jpg",
+        "Powder-Impression-05.jpg"
+      ]
+    },
+    {
+      "name": "Refractions",
+      "slug": "Refractions",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Refractions",
+      "webPath": "/Portfolio/Refractions",
+      "coverWebPath": "/Portfolio/Refractions/Reafactions-v2-015.jpg",
+      "images": [
+        "Reafactions-v2-015.jpg",
+        "Reafactions-v3-015.jpg",
+        "ret-Reafactions-v2-015.jpg"
+      ]
+    },
+    {
+      "name": "Sphere-block",
+      "slug": "Sphere-block",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Sphere-block",
+      "webPath": "/Portfolio/Sphere-block",
+      "coverWebPath": "/Portfolio/Sphere-block/Cube-Box-Overlapped_0002.jpg",
+      "images": [
+        "Cube-Box-Overlapped_0002.jpg",
+        "Cube-Box-Overlapped_0003.jpg",
+        "Cube-Box-Overlapped_0004.jpg"
+      ]
+    },
+    {
+      "name": "Storage-Locker",
+      "slug": "Storage-Locker",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Storage-Locker",
+      "webPath": "/Portfolio/Storage-Locker",
+      "coverWebPath": "/Portfolio/Storage-Locker/Industrial-Vents-Girders_0010-Balloons-FLT.jpg",
+      "images": [
+        "Industrial-Vents-Girders_0010-Balloons-FLT.jpg",
+        "Industrial-Vents-Girders_0010-Col-V2-FLT.jpg"
+      ]
+    },
+    {
+      "name": "Striplight-Room",
+      "slug": "Striplight-Room",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Striplight-Room",
+      "webPath": "/Portfolio/Striplight-Room",
+      "coverWebPath": "/Portfolio/Striplight-Room/GlassStripLight-Room-05-2.jpg",
+      "images": [
+        "GlassStripLight-Room-05-2.jpg",
+        "GlassStripLight-Room-05.jpg",
+        "GlassStripLight-Room-08.jpg"
+      ]
+    },
+    {
+      "name": "TIDE",
+      "slug": "TIDE",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/TIDE",
+      "webPath": "/Portfolio/TIDE",
+      "coverWebPath": "/Portfolio/TIDE/PG-Tide-X2-Ultra-Cannes-Footballers.jpg",
+      "images": [
+        "PG-Tide-X2-Ultra-Cannes-Footballers.jpg",
+        "ret-Football_0003-copy-2.jpg",
+        "Ret-Football_0003-copy.jpg",
+        "ret-Football-Dirty.jpg",
+        "ret-Football-real-dark-TWEAK.jpg",
+        "ret-Tide-Footballers.jpg",
+        "TIDE-Footballers-big.jpg"
+      ]
+    },
+    {
+      "name": "Woolite",
+      "slug": "Woolite",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/Woolite",
+      "webPath": "/Portfolio/Woolite",
+      "coverWebPath": "/Portfolio/Woolite/03zWoolite-A4-HandsWire.jpg",
+      "images": [
+        "03zWoolite-A4-HandsWire.jpg",
+        "ret-WOOLITE-Hands.jpg",
+        "ret-WOOLITE-Kiss.jpg",
+        "ret-WOOLITE-Legs.jpg",
+        "Woolite-A4-Hands.jpg",
+        "WOOLITE-Kiss (Case Conflict).jpg",
+        "WOOLITE-Kiss-150x150 (Case Conflict).jpg",
+        "Woolite-Kiss.jpg"
+      ]
+    },
+    {
+      "name": "cartier",
+      "slug": "cartier",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/cartier",
+      "webPath": "/Portfolio/cartier",
+      "coverWebPath": "/Portfolio/cartier/Cartier_Salt_Lake_BG-Simp-F1_V10_CMJN_PLV-2.jpg",
+      "images": [
+        "Cartier_Salt_Lake_BG-Simp-F1_V10_CMJN_PLV-2.jpg",
+        "Cartier_Salt_Lake_BG-Simp-F1_V10_CMJN_PLV-3.jpg",
+        "Cartier_Salt_Lake_BG-Simp-F1_V10_CMJN_PLV.jpg",
+        "CartierIndiaLake_A_CLIENT_Vis1_FINAL_AvecBijoux_PLV.jpg",
+        "CartierIndiaLake_A_CLIENT_Vis2_FINAL_AvecBijoux_02_PLV-2.jpg",
+        "CartierIndiaLake_A_CLIENT_Vis2_FINAL_AvecBijoux_02_PLV-3.jpg",
+        "CartierIndiaLake_A_CLIENT_Vis2_FINAL_AvecBijoux_02_PLV-4.jpg",
+        "CartierIndiaLake_A_CLIENT_Vis2_FINAL_AvecBijoux_02_PLV.jpg"
+      ]
+    },
+    {
+      "name": "japan",
+      "slug": "japan",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/japan",
+      "webPath": "/Portfolio/japan",
+      "coverWebPath": "/Portfolio/japan/Japan-Window-04a-FLT.jpg",
+      "images": [
+        "Japan-Window-04a-FLT.jpg",
+        "Japan-Window-05-FLT.jpg"
+      ]
+    },
+    {
+      "name": "pattern",
+      "slug": "pattern",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/pattern",
+      "webPath": "/Portfolio/pattern",
+      "coverWebPath": "/Portfolio/pattern/Blue-Pattern_0004-a-FLT.jpg",
+      "images": [
+        "Blue-Pattern_0004-a-FLT.jpg",
+        "Blue-Pattern_0004-b-FLT-copy.jpg",
+        "Blue-Pattern_0004-c-FLT.jpg"
+      ]
+    },
+    {
+      "name": "qbit",
+      "slug": "qbit",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/qbit",
+      "webPath": "/Portfolio/qbit",
+      "coverWebPath": "/Portfolio/qbit/qbit-01.jpg",
+      "images": [
+        "qbit-01.jpg",
+        "qbit-02.jpg",
+        "qbit-03.jpg",
+        "qbit-04b-copy.jpg",
+        "qbit-04c-copy.jpg",
+        "qbit-07.jpg"
+      ]
+    },
+    {
+      "name": "tesselated",
+      "slug": "tesselated",
+      "fsPath": "/home/sd/Local Sites/GPT/portfolio/public/Portfolio/tesselated",
+      "webPath": "/Portfolio/tesselated",
+      "coverWebPath": "/Portfolio/tesselated/Black-tesselated-shape-06.jpg",
+      "images": [
+        "Black-tesselated-shape-06.jpg",
+        "Black-tesselated-shape-08.jpg"
+      ]
+    }
+  ]
+}

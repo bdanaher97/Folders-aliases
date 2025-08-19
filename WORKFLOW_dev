@@ -1,0 +1,97 @@
+/* prettier-ignore-file */
+
+
+main ───●───────────────●───────────────────────────────
+          \              
+feat-hero  ●─────● (base idea)
+            \ 
+            ├── option/v1 ───●──● (A)      ← tag: hero-v1
+            └── option/v2 ───●──●──● (B)   ← tag: hero-v2 (winner)
+
+
+git switch main
+git pull --rebase
+
+git switch -c feat/hero
+# ...baseline work...
+git push -u origin feat/hero
+
+# Option 1
+git switch -c option/hero-v1 feat/hero
+# ...changes...
+git add -A && git commit -m "hero v1 layout"
+git push -u origin option/hero-v1
+
+# Option 2
+git switch feat/hero
+git switch -c option/hero-v2
+# ...changes...
+git add -A && git commit -m "hero v2 layout"
+git push -u origin option/hero-v2
+
+
+----
+# after the last commit on v1
+git tag -a hero-v1 -m "Hero option v1 preview baseline"
+git push origin hero-v1
+
+# after the last commit on v2 (winner)
+git tag -a hero-v2 -m "Hero option v2 (chosen)"
+git push origin hero-v2
+
+
+---
+# merge winner into the parent feature (optional but tidy)
+git switch feat/hero
+git merge --ff-only option/hero-v2
+
+# then release to main
+git switch main
+git pull --rebase
+git merge --ff-only feat/hero
+git push   # → Vercel production deploy
+
+Tips that keep this sane
+
+    One logical change per commit; write messages you’ll understand in a month.
+
+    Protect main on GitHub; use PRs to merge.
+
+    Always pull before work (git pull --rebase) and push before switching machines.
+
+    Tag what you ship (e.g., release-2025-08-11, hero-v2).
+
+    To work on two options simultaneously on one machine, consider git worktrees:
+
+# git worktree add ../hero-v1 option/hero-v1
+# git worktree add ../hero-v2 option/hero-v2
+
+  Two folders, two branches, no context‑switch churn.
+
+
+# *** Two‑machine safety checklist ***
+
+Before leaving Desktop/Laptop
+
+    Finish work → git add -A && git commit -m "…"
+
+    Publish → git push
+
+    Verify clean → git status (should say “nothing to commit” and not “ahead by …”)
+
+# When starting on the other machine
+
+    Pick branch → git switch main (or your feature)
+
+    Sync → git pull --rebase
+
+    Verify → git status (should not say “behind by …”)
+
+    Start work → new branch or continue
+
+# If you ever see “diverged”
+git pull --rebase → resolve → git rebase --continue → git push
+
+# Script commands
+
+npm run gen:orders 

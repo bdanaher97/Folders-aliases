@@ -1,0 +1,193 @@
+/* Import all UI knobs/variables first so they’re available everywhere */
+@import "./css/variables.css";
+
+/* Tailwind base layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  @apply bg-paper text-ink antialiased;
+}
+
+/* ---------- Header site name text from CSS var ---------- */
+.site-name::after {
+  content: var(--site-name);
+}
+
+/* ---------- Sticky breadcrumbs just under header ---------- */
+.sticky-crumbs {
+  position: sticky;
+  top: var(--header-offset);
+  z-index: 40;
+  /* match header exactly */
+  @apply bg-paper/80 backdrop-blur;
+  /* remove any gap */
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Breadcrumbs slot inside header */
+#crumbs-slot {
+  padding-top: var(--crumbs-top-gap);
+}
+
+/* Breadcrumb list styling */
+.crumbs {
+  color: var(--crumbs-color);
+  margin-left: var(--crumbs-indent);
+}
+
+/* ---------------- Reusable component classes ---------------- */
+
+/* ---------- Folder tile variants controlled by CSS vars ----------
+   Top-level folders use --tile-aspect-top; subfolders use --tile-aspect-sub
+   These classes are chosen in <GalleryGrid data-level="top|sub"> */
+.tile-base {
+  @apply overflow-hidden bg-tilebg;
+}
+.tile-top {
+  aspect-ratio: var(--tile-aspect-top, 1 / 1);
+  @apply tile-base;
+}
+.tile-sub {
+  aspect-ratio: var(--tile-aspect-sub, 4 / 5);
+  @apply tile-base;
+}
+
+/* ---------- Visibility controlled by CSS variables (no TSX toggles required)
+   We collapse space when hidden using max-height/opacity/margins controlled by 0/1 vars.
+   - Top folder page:    [data-level="top"]   uses --show-top-titles / --show-top-counts
+   - Subfolder pages:    [data-level="sub"]   uses --show-sub-titles / --show-sub-counts
+   - Leaf image labels:  .image-filename      uses --show-image-filenames
+*/
+
+/* Base: sensible defaults (visible) */
+.folder-title,
+.folder-count,
+.image-filename {
+  transition: opacity .2s ease;
+}
+
+/* TOP level folders */
+[data-level="top"] .folder-title {
+  max-height: calc(var(--show-top-titles, 1) * 999px);
+  opacity: var(--show-top-titles, 1);
+  margin-top: calc(var(--show-top-titles, 1) * 0.5rem);
+  overflow: hidden;
+}
+[data-level="top"] .folder-count {
+  max-height: calc(var(--show-top-counts, 1) * 999px);
+  opacity: var(--show-top-counts, 1);
+  margin-top: calc(var(--show-top-counts, 1) * 0.25rem);
+  overflow: hidden;
+}
+
+/* SUB level folders */
+[data-level="sub"] .folder-title {
+  max-height: calc(var(--show-sub-titles, 1) * 999px);
+  opacity: var(--show-sub-titles, 1);
+  margin-top: calc(var(--show-sub-titles, 1) * 0.5rem);
+  overflow: hidden;
+}
+[data-level="sub"] .folder-count {
+  max-height: calc(var(--show-sub-counts, 1) * 999px);
+  opacity: var(--show-sub-counts, 1);
+  margin-top: calc(var(--show-sub-counts, 1) * 0.25rem);
+  overflow: hidden;
+}
+
+/* Leaf image filenames (applies everywhere ImageGrid is used) */
+.image-filename {
+  max-height: calc(var(--show-image-filenames, 1) * 999px);
+  opacity: var(--show-image-filenames, 1);
+  margin-top: calc(var(--show-image-filenames, 1) * 0.25rem);
+  overflow: hidden;
+}
+
+/* ---------- Leaf images: native aspect (NO cropping)
+   We intentionally do NOT set aspect-ratio here so the image’s intrinsic
+   ratio determines the height. This keeps final images uncropped. */
+.tile-leaf {
+  @apply overflow-hidden bg-tilebg;
+}
+/* Use this on the <img> for native aspect containment */
+.tile-img--contain {
+  @apply w-full h-auto object-contain block;
+}
+
+/* ---------- Legacy plain .tile (kept for back-compat)
+   If any old code uses `.tile`, make it follow the SUB aspect knob so it
+  doesn’t fight the new system. */
+.tile {
+  aspect-ratio: var(--tile-aspect-sub, 4 / 5);
+  @apply tile-base;
+}
+.tile-img {
+  @apply w-full h-full object-cover transition ease-zoom group-hover:scale-[1.02];
+}
+
+/* ---------- Lightbox */
+.lightbox-backdrop {
+  @apply fixed inset-0 z-[9999] overflow-hidden;
+  background: var(--lightbox-overlay);
+}
+.lightbox-img-wrap {
+  padding: var(--lightbox-border-desktop, var(--lightbox-padding));
+  background: var(--lightbox-bg);
+}
+.lightbox-img-heightfit {
+  display: block;
+  height: calc(
+    100dvh - (2 * var(--lightbox-border-desktop, var(--lightbox-padding)))
+  );
+  width: auto;
+  object-fit: cover; /* allow horizontal crop on large screens */
+  max-width: none;
+  max-height: none;
+}
+
+/* Overlay buttons: solid fill (no shadow), optional outline */
+.btn-overlay {
+  @apply select-none px-4 py-3;
+  background-color: var(--lightbox-button-bg);
+  color: var(--lightbox-button-text);
+}
+.btn-overlay--outline {
+  border: 1px solid var(--lightbox-button-border);
+}
+.btn-overlay--plain {
+  border: 1px solid transparent;
+}
+/* Global lightbox button style hook */
+.lightbox-button {
+  font-size: var(--lightbox-button-font-size);
+  line-height: 1;
+}
+
+/* Text utilities */
+.small-muted {
+  @apply text-sm opacity-60;
+}
+
+/* ---------- Mobile overrides (<640px) ---------- */
+@media (max-width: 640px) {
+  .lightbox-img-wrap {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: var(--lightbox-border-mobile, 0px);
+    margin: 0;
+  }
+  .lightbox-img-heightfit {
+    height: calc(100dvh - (2 * var(--lightbox-border-mobile, 0px)));
+    width: 100%;
+    object-fit: contain; /* show whole image on phones */
+    max-height: 100dvh;
+  }
+}

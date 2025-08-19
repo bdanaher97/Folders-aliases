@@ -1,0 +1,191 @@
+/* prettier-ignore-file */
+
+DEV WORKFLOW – PORTFOLIO SITE
+
+This document explains day‑to‑day development: branching, gallery dev limits, cover logic, and common commands. Keep it in the repo root for quick reference.
+
+----------------------------------------------------------------------
+0) BRANCHING WORKFLOW (FEATURE + OPTIONS)
+----------------------------------------------------------------------
+
+
+
+main ───●───────────────●───────────────────────────────
+          \              
+feat-hero  ●─────● (base idea)
+            \ 
+            ├── option/v1 ───●──● (A)      ← tag: hero-v1
+            └── option/v2 ───●──●──● (B)   ← tag: hero-v2 (winner)
+
+# Sync main and start a feature branch
+git switch main
+git pull --rebase
+git switch -c feat/hero
+# ...baseline work...
+git push -u origin feat/hero
+
+# Option 1
+git switch -c option/hero-v1 feat/hero
+# ...changes...
+git add -A && git commit -m "hero v1 layout"
+git push -u origin option/hero-v1
+
+# Option 2
+git switch feat/hero
+git switch -c option/hero-v2
+# ...changes...
+git add -A && git commit -m "hero v2 layout"
+git push -u origin option/hero-v2
+
+---- Tags (freeze preview points)
+# after the last commit on v1
+git tag -a hero-v1 -m "Hero option v1 preview baseline"
+git push origin hero-v1
+
+# after the last commit on v2 (winner)
+git tag -a hero-v2 -m "Hero option v2 (chosen)"
+git push origin hero-v2
+
+---- Merge winner up and release
+# merge winner into the parent feature (optional but tidy)
+git switch feat/hero
+git merge --ff-only option/hero-v2
+
+# then release to main
+git switch main
+git pull --rebase
+git merge --ff-only feat/hero
+git push   # → Vercel production deploy
+
+Tips that keep this sane
+- One logical change per commit; write messages you’ll understand in a month.
+- Protect main on GitHub; use PRs to merge.
+- Always pull before work (git pull --rebase) and push before switching machines.
+- Tag what you ship (e.g., release-2025-08-11, hero-v2).
+- Two options at once? Use worktrees:
+  # git worktree add ../hero-v1 option/hero-v1
+  # git worktree add ../hero-v2 option/hero-v2
+
+*** Two‑machine safety checklist ***
+Before leaving Desktop/Laptop
+  git add -A && git commit -m "…"
+  git push
+  git status  # should be clean and not "ahead by …"
+Starting on the other machine
+  git switch main (or your feature)
+  git pull --rebase
+  git status  # should not be "behind by …"
+If you ever see “diverged”
+  git pull --rebase → resolve → git rebase --continue → git push
+
+----------------------------------------------------------------------
+1) LOCAL DEVELOPMENT SPEED‑UP (LIMIT WHAT LOADS)
+----------------------------------------------------------------------
+
+Why: Huge folders slow dev. Limit how many items render in dev.
+
+A) How the limit is decided
+- The app looks for either:
+  1) Environment variables in .env.local
+  2) A .dev-limit file in the repo root or public/Portfolio
+- If a positive number is found, lists are sliced to that size in dev.
+
+B) .env.local (preferred)
+Create at repo root (ignored by Git). Example:
+  NEXT_PUBLIC_DEV=1              # force limiter ON in dev
+  NEXT_PUBLIC_GALLERY_LIMIT=6    # show only first 6 at each limited level
+
+Explicit OFF switch:
+- Set NEXT_PUBLIC_DEV=0 to disable the limiter even in `npm run dev`.
+
+C) .dev-limit file (alternative)
+Place a file containing just a number:
+- ./\.dev-limit           (repo root)  or
+- public/Portfolio/.dev-limit
+Example contents:
+  6
+
+D) Runtime rules (server)
+- Limiter ON when:
+  - NEXT_PUBLIC_DEV=1, or
+  - NEXT_PUBLIC_DEV unset AND NODE_ENV !== "production"
+- Limiter OFF when:
+  - NEXT_PUBLIC_DEV=0, or
+  - NODE_ENV=production (Vercel prod builds)
+
+E) Where the limit applies
+- Top‑level children are limited in the data builder.
+- You can also wrap subdir/leaf arrays with maybeLimit(...) for extra speed.
+
+----------------------------------------------------------------------
+2) COVER IMAGE LOGIC (HOW COVERS ARE CHOSEN)
+----------------------------------------------------------------------
+
+When rendering a PARENT (a folder that lists subfolders), the cover is chosen by:
+
+1) .cover file (explicit)
+   - Located in the parent folder.
+   - Contains the exact image filename (no path).
+   - If that filename exists at the parent level → use /parent/<file>.
+   - Else search each immediate child in display order → /parent/<child>/<file>.
+
+2) Exactly one image at parent level
+   - If there is exactly one image directly in the parent → use it.
+
+3) First image in the first child that has images
+   - Scan ordered children; pick first child with images → use its first image.
+
+Leaf behavior (a folder with NO subfolders):
+- If 2+ images → grid shows them (filenames only); if no cover yet, the first image becomes the cover.
+- If exactly 1 image:
+  - If the leaf has at least one sibling directory at the same level → treat as COVER‑ONLY:
+    coverWebPath = that image; images = hidden (no grid duplication).
+  - If it is the ONLY child → show that single image in the grid (and use it as cover).
+- If 0 images → no grid; cover may be undefined.
+
+Gotchas / Tips
+- .cover must be a single filename (case‑sensitive), first non‑empty line. Whitespace and UTF‑8 BOM are trimmed.
+- After changing .cover or order files in dev, if a change doesn’t appear:
+  rm -rf .next && npm run dev
+  (Optionally on the listing page: export const revalidate = 0; or dynamic = 'force-dynamic')
+
+----------------------------------------------------------------------
+3) COMMON COMMANDS
+----------------------------------------------------------------------
+
+Start the dev server
+  npm run dev
+
+Regenerate helper lists (if you use a script)
+  npm run gen:manifest    # updates .images / .folders if implemented
+
+Order helpers (if present in your package.json)
+  npm run gen:orders
+
+Basic Git loop
+  git add -A
+  git commit -m "Message"
+  git push
+
+Check branch
+  git branch --show-current
+
+----------------------------------------------------------------------
+4) FILE CONVENTIONS (RECAP)
+----------------------------------------------------------------------
+
+- .order   → authoritative explicit order (folders and/or files)
+- .folders → optional fallback list of folder names
+- .images  → optional fallback list of image filenames
+- .cover   → one filename (no path); used by parent to pick a cover
+- Images   → filenames only in node.images; UI prefixes with node.webPath
+- coverWebPath → full URL to chosen image
+
+----------------------------------------------------------------------
+5) PRODUCTION NOTES (VERCEL)
+----------------------------------------------------------------------
+
+- Vercel runs with NODE_ENV=production by default.
+- .env.local is not used on Vercel unless you define those vars in the dashboard.
+- The dev limiter will NOT run in production unless you explicitly set NEXT_PUBLIC_DEV=1 (don’t).
+- Merging to main triggers a Vercel production deploy (assuming the project is wired to the repo).

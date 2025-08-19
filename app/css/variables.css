@@ -1,0 +1,51 @@
+/* ===========================
+   Global UI Variables (ROOT)
+   =========================== */
+:root {
+  /* ---------- Gallery display knobs (EDIT THESE) ---------- */
+  /* Aspect ratios for folder tiles (examples: 1 / 1, 4 / 5, 3 / 2, 16 / 9) */
+  --tile-aspect-top: 1 / 1;  /* Top-level gallery folders */
+  --tile-aspect-sub: 1 / 1;  /* Subdirectory folders */
+
+  /* Show/hide text labels without code changes (1 = show, 0 = hide) */
+  --show-top-titles: 1;
+  --show-top-counts: 1;
+  --show-sub-titles: 0;
+  --show-sub-counts: 1;
+  --show-image-filenames: 1;
+
+  /* ---------- Lightbox + site misc ---------- */
+  /* Lightbox overlay & buttons */
+  --lightbox-overlay: rgba(255, 255, 255, 0.8);
+  --lightbox-button-bg: #fff;
+  --lightbox-button-text: #000;
+  --lightbox-button-font-size: 1.75rem; /* < > × size */
+  --lightbox-button-border: rgba(0, 0, 0, 0.1);
+
+  /* Responsive lightbox gutter */
+  --lightbox-border-desktop: 5px;
+  --lightbox-border-mobile: 2px; /* you said you liked 2px on mobile */
+
+  /* Site-wide */
+  --site-name: "Simon Danaher"; /* ← change this */
+  --header-offset: 64px;        /* ← distance from top where crumbs pin under the header */
+  --header-bg: #fafafa;         /* matches bg-paper */
+  --crumbs-bg: var(--header-bg);
+
+  /* Breadcrumb controls */
+  --crumbs-top-gap: 10px; /* space above crumbs inside header */
+  --crumbs-indent: 10px;  /* horizontal indent from site title */
+  --crumbs-color: rgba(0, 0, 0, 0.7); /* crumb text color */
+
+  /* Contact details */
+  --contact-email: "you@example.com";
+  --contact-phone: "+1 234 567 890";
+  --contact-instagram: "@yourhandle";
+  --contact-instagram-url: "https://instagram.com/yourhandle";
+  --contact-website: "yourdomain.com";
+  --contact-website-url: "https://yourdomain.com";
+
+  /* Legacy (still honored) */
+  --lightbox-padding: 5px;
+  --lightbox-bg: transparent;
+}

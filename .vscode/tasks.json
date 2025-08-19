@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "install", "type": "shell", "command": "npm install" },
+    { "label": "build", "type": "shell", "command": "npm run build" },
+    { "label": "start", "type": "shell", "command": "npm start" }
+  ]
+}

@@ -1,0 +1,14 @@
+#### `/scripts` – WHAT THESE DO
+
+- **generate-manifest.mjs**
+  Scans gallery folders and generates `.folders` and `.images` helper files for each directory.
+
+  **Reminder:** Run this before committing if you’ve added, removed, or renamed galleries/images — it keeps the helper files in sync.
+
+- **build.js**
+  Runs the Next.js build process with any project-specific pre-build steps (e.g., ensuring manifests are up to date before compiling).
+
+- **dev.js**
+  Starts the Next.js development server on the configured port (3001), allowing live reload while editing code and content.
+
+---

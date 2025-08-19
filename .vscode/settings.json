@@ -1,0 +1,58 @@
+// .vscode/settings.json (JSONC – comments allowed)
+// Drop-in file enabling ESLint v9 flat config + stable TS/React dev UX.
+
+{
+  // -----------------------------
+  // Formatting & editor feel
+  // -----------------------------
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "editor.quickSuggestions": { "strings": true },
+
+  // Keep/extend your custom associations (seeded with the ones you showed)
+  "files.associations": {
+    "WORKFLOW*": "ini",
+    "HOW_TO*": "ini",
+    "TODO*": "ini",
+    "READ*": "ini"
+    // Add more as needed
+  },
+
+  // Terminal default (common on Linux Mint)
+  "terminal.integrated.defaultProfile.linux": "bash",
+
+  // -----------------------------
+  // ESLint v9 “flat config”
+  // -----------------------------
+  // Use flat config (eslint.config.*) and stop reading legacy .eslintrc / .eslintignore
+  "eslint.useFlatConfig": true,
+
+  // Help ESLint extension resolve the correct root in single or multi-root workspaces
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+
+  // Lint these languages in the editor
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Don’t auto-fix on every save; require explicit “Fix all” so Codex/manual edits stay predictable
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Always show the ESLint status on the status bar
+  "eslint.alwaysShowStatus": true,
+
+  // -----------------------------
+  // TypeScript
+  // -----------------------------
+  // Force VS Code to use the workspace TypeScript, not the bundled one
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Example inlay hint preference you had
+  "typescript.inlayHints.parameterTypes.enabled": false
+}
